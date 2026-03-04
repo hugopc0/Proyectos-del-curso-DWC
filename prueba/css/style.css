@@ -1,0 +1,118 @@
+:root {
+  /* Colores */
+  --primario: #ffc107;
+  --secundario: #0097a7;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #360000 0%, var(--blanco) 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1 span {
+  font-size: 2rem;
+}
+
+.nav-bg {
+  background-color: var(--secundario);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav a, .boton {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 5rem;
+}
+
+.boton {
+  background-color: var(--secundario);
+  border-radius: .5rem;
+  text-transform: uppercase;
+}
+
+nav a:hover, .boton:hover {
+  background-color: var(--primario);
+  color: black;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+}
+
+.hero-bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+.hero-bg div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-bg span {
+  margin-left: -1rem;
+  color: white;
+}
+
+.hero-bg .boton {
+  margin-top: 2rem;
+}
+
+@media (min-width: 760px) {
+  nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

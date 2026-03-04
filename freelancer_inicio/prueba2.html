@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="jijija"></div>
+    <script>
+      function detectarEnlaces(texto) {
+        const regex = /https?:\/\/[^\s]+/g;
+        if (texto.match(regex)) {
+          var cosa = texto.match(regex);
+        }
+        return texto.match(regex) || [];
+      }
+
+      // Ejemplo de uso
+      var texto =
+        "Mira este enlace: https://ejemplo.com y este otro http://google.com";
+      const enlaces = detectarEnlaces(texto);
+      console.log(enlaces); // ["https://ejemplo.com", "http://google.com"]
+      for (let x = 0; x < enlaces.length; x++) {
+        texto = texto.replace(
+          enlaces[x],
+          `<a href="${enlaces[x]}">${enlaces[x]}</a>`
+        );
+      }
+      console.log(texto);
+      document.getElementById("jijija").innerHTML = texto;
+    </script>
+  </body>
+</html>
