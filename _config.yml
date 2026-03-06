@@ -1,11 +1,6 @@
 title: Proyectos del curso DWC
 description: Mi portafolio de proyectos para el curso de Despliegue de Aplicaciones Web.
-theme: jekyll-theme-primer
 repository: hugopc0/Proyectos-del-curso-DWC
-remote_theme: pages-themes/primer@v0.6.0
+theme: jekyll-theme-primer
 
-  # Esto ayuda a que Jekyll no se pierda buscando metadatos
-plugins:
- - jekyll-remote-theme
- - jekyll-github-metadata
- - jekyll-seo-tag
+  # Eliminamos 'remote_theme' y los plugins manuales para usar los que GitHub trae por defecto
