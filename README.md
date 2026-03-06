@@ -3,5 +3,3 @@
 - [Blog de cafe](blogdecafe_inicio/)
 - [FrontEnd Store](FrontEndStore_inicio/)
 - [Festival de Musica](Materiales-Festival-de-Musica/)
-
-Esto es una prueba
